@@ -343,6 +343,9 @@ header nav a:hover {
 @media (max-width:800px) {
   .home .content-pick .destination {
     width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 }
 .home .content-pick .destination .btn {
