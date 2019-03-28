@@ -1,1 +1,17 @@
 // Mixins in here
+
+.anchorStyle (@decoration,@color) {
+    text-decoration:@decoration;
+    color:@color;
+}
+
+.buttonStyle (@width, @bgcolor, @fontcolor) {
+    width:@width;
+    font-size:1.8rem;
+    padding:13px;
+    border-radius:15px;
+    text-align:center;
+    border:1px solid @silver;
+    background-color:@bgcolor;
+    color:@fontcolor;
+}

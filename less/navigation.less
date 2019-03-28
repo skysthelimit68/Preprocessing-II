@@ -1,1 +1,35 @@
 // Navigation Styles here
+
+header {
+    padding: 20px 0 25px;
+    width:100%;
+    border-bottom:2px dashed @silver;
+    .header-wrapper {
+        display:flex;
+        align-items:baseline;
+        width:100%;
+        max-width:800px;
+        margin:0 auto;
+    }
+    h1 {
+        width:30%;
+        a {
+            .anchorStyle(none, black);
+        }
+    }
+    nav {
+        width:70%;
+        display:flex;
+        justify-content:flex-end;
+
+        a {
+            .anchorStyle(none,black);
+            padding-right:5%;
+            &:hover {
+                color: darken(lightblue,80%)
+            }
+            font-size:1.6rem;
+        }
+
+    }
+}
