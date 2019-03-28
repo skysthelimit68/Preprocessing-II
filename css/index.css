@@ -167,11 +167,19 @@ img {
   max-width: 800px;
   width: 94%;
   margin: 0 auto;
+  padding-top: 86px;
+}
+@media (max-width:800px) {
+  .container {
+    padding-top: 110px;
+  }
 }
 header {
   padding: 20px 0 25px;
   width: 100%;
   border-bottom: 2px dashed #C0C0C0;
+  position: fixed;
+  background-color: white;
 }
 @media (max-width:800px) {
   header {
