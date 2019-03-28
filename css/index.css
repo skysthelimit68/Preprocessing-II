@@ -354,3 +354,126 @@ header nav a:hover {
     color: #FFFFFF;
   }
 }
+.home .content-pick .destination .btn a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.modal-wrap {
+  margin: 100px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 15px;
+  width: 100%;
+  position: relative;
+  max-width: 450px;
+}
+@media (max-width:500px) {
+  .modal-wrap {
+    max-width: 90%;
+  }
+}
+.close-circle {
+  background-color: #ecc600;
+  border-radius: 50%;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.close-circle .close {
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.close-circle .close:hover {
+  color: #17A2B8;
+}
+/*.modal-wrap h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }*/
+/*.modal-wrap .content {
+    max-height: 30%;
+    overflow: auto;
+  }*/
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 1.6rem;
+}
+.form-wrap {
+  padding: 0 3%;
+}
+.form-wrap .form-half-field {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+@media (max-width:500px) {
+  .form-wrap .form-half-field {
+    width: 100%;
+  }
+}
+.form-wrap .form-full-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.form-wrap button {
+  width: 80%;
+  font-size: 1.8rem;
+  padding: 13px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid #C0C0C0;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  margin: 40px auto 10px;
+}
+.form-wrap button:focus {
+  border: none;
+}
+.form-wrap button:active {
+  border: none;
+}
+input,
+textarea,
+select {
+  padding: 10px;
+  height: 50px;
+  font-size: 1em;
+  font-family: monospace, serif;
+  color: #555;
+  margin-top: 5px;
+  border-radius: 5px;
+}
