@@ -415,7 +415,7 @@ header nav a:hover {
 }
 .close-circle:hover {
   border: 3px solid #17A2B8;
-  transition: all 200ms;
+  transition: all 500ms;
 }
 .close-circle .close {
   transition: all 200ms;
@@ -466,6 +466,9 @@ form {
   margin: 40px auto 10px;
 }
 .form-wrap button:hover {
+  border: 3px solid #17A2B8;
+  transition: all 500ms;
+  padding: 11px 13px;
   background-color: #117a8b;
 }
 input,
