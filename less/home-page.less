@@ -89,7 +89,12 @@
         width:100%;
       }
       .btn {
-        .buttonStyle(85%, darken(@eastern-blue, 10%), @white);
+        .buttonStyle(85%, @eastern-blue , @white);
+        &:hover {
+          .hoverTransition(@eastern-blue, 200ms);
+          background-color: darken(@eastern-blue, 10%);
+          padding:11px 13px;
+        }
         @media @mobile {
           .buttonStyle(100%, @eastern-blue, @white);
         }

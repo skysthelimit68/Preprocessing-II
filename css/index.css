@@ -344,8 +344,14 @@ header nav a:hover {
   border-radius: 15px;
   text-align: center;
   border: 1px solid #C0C0C0;
-  background-color: #117a8b;
+  background-color: #17A2B8;
   color: #FFFFFF;
+}
+.home .content-pick .destination .btn:hover {
+  border: 3px solid #17A2B8;
+  transition: all 200ms;
+  background-color: #117a8b;
+  padding: 11px 13px;
 }
 @media (max-width:500px) {
   .home .content-pick .destination .btn {
@@ -397,7 +403,6 @@ header nav a:hover {
   position: absolute;
   top: -15px;
   right: -15px;
-  transition: all 200ms;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
@@ -407,6 +412,10 @@ header nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.close-circle:hover {
+  border: 3px solid #17A2B8;
+  transition: all 200ms;
 }
 .close-circle .close {
   transition: all 200ms;
@@ -418,15 +427,6 @@ header nav a:hover {
 .close-circle .close:hover {
   color: #17A2B8;
 }
-/*.modal-wrap h2 {
-    margin-top: 0;
-    color: #333;
-    font-family: Tahoma, Arial, sans-serif;
-  }*/
-/*.modal-wrap .content {
-    max-height: 30%;
-    overflow: auto;
-  }*/
 form {
   display: flex;
   flex-wrap: wrap;
@@ -465,11 +465,8 @@ form {
   color: #FFFFFF;
   margin: 40px auto 10px;
 }
-.form-wrap button:focus {
-  border: none;
-}
-.form-wrap button:active {
-  border: none;
+.form-wrap button:hover {
+  background-color: #117a8b;
 }
 input,
 textarea,
