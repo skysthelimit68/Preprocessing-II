@@ -1,1 +1,64 @@
 // Navigation Styles here
+
+header {
+
+    padding: 20px 0 25px;
+    width:100%;
+    border-bottom:2px dashed @silver;
+    position:fixed;
+    height:90px;
+    background-color:white;
+
+    @media @tablet {
+        padding-bottom:8px;
+        height:100px;
+    }
+    .header-wrapper {
+        display:flex;
+        align-items:baseline;
+        width:94%;
+        max-width:800px;
+        margin:0 auto;
+        @media @tablet {
+            flex-direction:column;
+
+
+        }
+    }
+    h1 {
+        width:35%;
+        @media @tablet {
+            width:100%;
+            text-align:center;
+            font-size:5rem;
+            margin-bottom:15px;
+        }
+        @media @mobile {
+            font-size:3rem;
+        }
+        a {
+            .anchorStyle(none, black);
+        }
+    }
+    nav {
+        width:65%;
+        display:flex;
+        justify-content:flex-end;
+        @media @tablet {
+            width:100%;
+            justify-content: space-around;
+        }
+        a {
+            .anchorStyle(none,black);
+            padding-right:8%;
+            &:hover {
+                color: darken(lightblue,80%)     
+            }
+            font-size:1.6rem;
+            @media @tablet {
+                padding-right:0;
+            }
+        }
+
+    }
+}
